@@ -1,0 +1,74 @@
+.card {
+  padding: 2%;
+  width: 250px;
+  height: 300px;
+  overflow-y: scroll;
+  border-bottom: 3px solid #000;
+  position: relative;
+}
+.card::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 5px;
+}
+.card::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 1);
+}
+.name {
+  font-size: 15px;
+  text-transform: lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+.list_phase {
+  margin: 0;
+  padding: 0;
+}
+.phase_item {
+  margin: 0;
+  padding: 0;
+}
+.list_technology {
+  margin: 0;
+  padding: 0;
+}
+.technology_item {
+  margin-bottom: 10px;
+}
+.card_active {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(253, 249, 249);
+  padding: 20px;
+  overflow-y: scroll;
+}
+.btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(89, 224, 71);
+  position: sticky;
+  top: 50%;
+  left: 100%;
+  border: none;
+  opacity: 0.4;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 1;
+    transform: scale(0.99);
+  }
+}
+.btn_active {
+  position: fixed;
+  top: 40px;
+  left: 90%;
+
+  background-color: rgb(233, 151, 27);
+}

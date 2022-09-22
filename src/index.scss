@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  width: 100vw;
+}
+.header {
+  margin: 0;
+  width: 100%;
+}
+section {
+  width: 90%;
+  height: max-content;
+  margin: 0 auto;
+}
+.crems_section {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.list_nav {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  font-size: 14px;
+  padding: 40px;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    &:visited {
+      color: #ccc;
+    }
+  }
+}
+
+.sort-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin: 40px;
+}
